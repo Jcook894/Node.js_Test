@@ -25,7 +25,10 @@ fs.readFile("index.html", (err, html) => {
 
 
     server.listen(port,hostname, () => {
-      console.log('Now live on '+ port + " " + hostname);
+      console.log("Node is running this server on localhost " + port)
+      for(i = 0; i < 10; i++){
+        console.log("This is a test loop "+ i);
+      }
     });
 
 });
