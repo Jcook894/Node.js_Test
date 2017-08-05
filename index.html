@@ -2,8 +2,20 @@
 <html>
 <head>
   <title> Node and Vue test site </title>
-  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
-    <h1> Using Node and Vue to build an application <h1>
+  <div id="app">
+    <h1>{{ message }}</h1>
+  </div>
+</body>
+      <script src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+        <script>
+          var app = new Vue({
+            el:"#app",
+            data:{
+              message:"Hey people! Im Vue.js!"
+            }
+          });
+
+        </script>
 </html>
